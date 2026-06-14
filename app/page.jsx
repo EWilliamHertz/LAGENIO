@@ -119,7 +119,7 @@ export default function Home() {
                       <ul className="space-y-4 divide-y divide-gray-800">
                           <li className="flex justify-between pt-4"><span className="text-gray-400">Processor</span><span className="text-white font-medium text-right">Octa-Core Industrial Chipset</span></li>
                           <li className="flex justify-between pt-4"><span className="text-gray-400">Memory & Storage</span><span className="text-white font-medium text-right">Up to 12GB RAM / 256GB ROM</span></li>
-                          <li className="flex justify-between pt-4"><span className="text-gray-400">Operating System</span><span className="text-white font-medium text-right">Android 14 (Enterprise Ready)</span></li>
+                          <li className="flex justify-between pt-4"><span className="text-gray-400">Operating System</span><span className="text-white font-medium text-right">Android 16</span></li>
                           <li className="flex justify-between pt-4"><span className="text-gray-400">Connectivity</span><span className="text-white font-medium text-right">5G, Wi-Fi 6, Bluetooth 5.2</span></li>
                           <li className="flex justify-between pt-4"><span className="text-gray-400">SIM Support</span><span className="text-white font-medium text-right">Enterprise eSIM + Dual Nano-SIM</span></li>
                       </ul>
