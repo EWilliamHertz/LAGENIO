@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAGENIO B2B Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function sendB2BEmail(email, company) {
+            const subject = encodeURIComponent(`LAGENIO Rhino 1 Pro Wholesale Partnership - ${company}`);
+            const body = encodeURIComponent(`Hello team at ${company},\n\nWe are expanding the distribution of the LAGENIO Rhino 1 Pro in the Nordic region and would love to discuss an extremely competitive 35% margin retail structure with you.\n\nBest regards,\nLAGENIO Nordic Distribution`);
+            window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased flex h-screen overflow-hidden">
+
+    <aside class="w-64 bg-gray-900 text-white flex flex-col hidden md:flex">
+        <div class="h-20 flex items-center px-6 border-b border-gray-800">
+            <span class="font-bold text-xl tracking-tighter">LAGENIO <span class="text-yellow-500">ADMIN</span></span>
+        </div>
+        <nav class="flex-1 px-4 py-6 space-y-2">
+            <a href="#" class="block px-4 py-2 rounded-lg bg-gray-800 text-white font-medium">B2B Contacts</a>
+            <a href="#" class="block px-4 py-2 rounded-lg text-gray-400 hover:bg-gray-800 hover:text-white transition">Inventory</a>
+            <a href="#" class="block px-4 py-2 rounded-lg text-gray-400 hover:bg-gray-800 hover:text-white transition">Orders</a>
+            <a href="index.html" class="block px-4 py-2 rounded-lg text-gray-400 hover:bg-gray-800 hover:text-white transition mt-8 border border-gray-700">← Back to Site</a>
+        </nav>
+    </aside>
+
+    <main class="flex-1 flex flex-col overflow-hidden">
+        <header class="h-20 bg-white shadow-sm flex items-center justify-between px-8 border-b border-gray-200">
+            <h1 class="text-2xl font-bold text-gray-800">Nordic Retailer Outreach Database</h1>
+            <div class="flex items-center gap-4">
+                <span class="text-sm font-medium text-gray-500">Target Margin: 35%</span>
+                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-semibold">Active Campaign</span>
+            </div>
+        </header>
+
+        <div class="flex-1 overflow-auto p-8">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Company</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Contact Target</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="font-bold text-gray-900">Elgiganten AB</div>
+                                <div class="text-sm text-gray-500">Sweden</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Retail - Tier 1</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">b2b@elgiganten.se</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">Pending Pitch</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                <button onclick="sendB2BEmail('b2b@elgiganten.se', 'Elgiganten AB')" class="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700 transition">Send Pitch</button>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="font-bold text-gray-900">NetOnNet AB</div>
+                                <div class="text-sm text-gray-500">Sweden</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Retail - Tier 1</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">b2b@netonnet.se</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">Pending Pitch</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                <button onclick="sendB2BEmail('b2b@netonnet.se', 'NetOnNet AB')" class="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700 transition">Send Pitch</button>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="font-bold text-gray-900">Kjell & Company</div>
+                                <div class="text-sm text-gray-500">Sweden</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Retail - Tier 1</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">contact@kjell.com</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">Pending Pitch</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                <button onclick="sendB2BEmail('contact@kjell.com', 'Kjell & Company')" class="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700 transition">Send Pitch</button>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="font-bold text-gray-900">Swedish Police (Polisen)</div>
+                                <div class="text-sm text-gray-500">Sweden</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Government Procurement</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">public.procurement@polisen.se</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-gray-100 text-gray-800">Researching</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                <button onclick="sendB2BEmail('public.procurement@polisen.se', 'Swedish Police')" class="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700 transition">Send Pitch</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
